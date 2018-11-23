@@ -81,6 +81,7 @@ int main(void)
   
   wtime3 = omp_get_wtime ( ) - wtime3;
   
+  printf ( "\n" );
   printf ( "  Elapsed time loop 1 = %g seconds\n", wtime1 );
   printf ( "  Elapsed time loop 2 = %g seconds\n", wtime2 );
   printf ( "  Elapsed time loop 3 = %g seconds\n", wtime3 );
