@@ -35,8 +35,10 @@ int main(void)
   wtime = omp_get_wtime();
   wtime1 = omp_get_wtime();
 
+  #pragma omp parallel
   for (i = 0; i < n; i++)
   {
+    #pragma omp for
     for (j = 0; j < n; j++)
     {
       angle = 2.0 * pi * i * j / (double) n;
